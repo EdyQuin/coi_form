@@ -17,7 +17,7 @@ with st.form("form"):
     l_eight = st.text_input("Do you agree with how your spouse wants to dispose of his/her jewelry")
     m_nine = st.text_input("Do you agree with how your spouse wants to dispose of his/her personal property")
     n_ten = st.text_input("Do you agree with how your spouse wants to dispose of his/her property")
-    o_submitted = st.form_submit_button("Save in database")
+    submitted = st.form_submit_button("Save in database")
     clear_on_submit=True
 # Connect to Deta Base with your Project Key
 deta = Deta(st.secrets["deta_key"])
