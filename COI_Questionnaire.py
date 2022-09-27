@@ -6,7 +6,7 @@ with st.form("form"):
     name = st.text_input("Your name")
     age = st.number_input("Your age")
     email = st.text_input("Your email")
-    phone_number = st.text_input("Your phone number")
+    telephone = st.text_input("Your phone number")
     one = st.text_input("Does your spouse agree on how you want to dispose of your home?")
     two = st.text_input("Does your spouse agree on how you want to dispose of your bank accounts?")
     three = st.text_input("Does your spouse agree on how you want to dispose of your jewelry?")
