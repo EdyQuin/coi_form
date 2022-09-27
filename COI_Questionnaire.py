@@ -19,7 +19,6 @@ with st.form("form"):
     submitted = st.form_submit_button("Save in database")
     clear_on_submit=True
 # Connect to Deta Base with your Project Key
-from deta import Deta
 deta = Deta(st.secrets["deta_key"])
 db = deta.Base("LawTech_COI")
 # If the user clicked the submit button,
