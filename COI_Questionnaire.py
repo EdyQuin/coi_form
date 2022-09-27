@@ -1,5 +1,6 @@
 import streamlit as st
 from deta import Deta
+
 # Data to be written to Deta Base
 with st.form("form"):
     name = st.text_input("Your name")
