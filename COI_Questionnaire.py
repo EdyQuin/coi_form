@@ -3,6 +3,7 @@ from deta import Deta
 st.image('./SLP_LOGO.png')
 # Data to be written to Deta Base
 with st.form("form"):
+    name = st.text_input("Your name")
     age = st.number_input("Your age")
     email = st.text_input("Your email")
     phone_number = st.text_input("Your phone number")
