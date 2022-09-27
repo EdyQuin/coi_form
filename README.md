@@ -1,2 +1,2 @@
 # coi_form
-COI check
+## To keep track of potential COIs in joint rep matters and cases. 
