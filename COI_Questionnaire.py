@@ -22,7 +22,7 @@ with st.form("form"):
 # Connect to Deta Base with your Project Key
 deta = Deta(st.secrets["deta_key"])
 db = deta.Base("LawTech_COI")
-# If the user clicked the submit button,
+# If the user clicked the submit button
 # write the data from the form to the database.
 # You can store any data you want here. Just modify that dictionary below (the entries between the {}).
 if submitted:
