@@ -39,4 +39,4 @@ if submitted:
 # db_content is a list of dictionaries. You can do everything you want with it.
 db_content = db.fetch(query=None, limit=None, last=None).items
 "---"
-st.image('./')
+st.image('./SLP_LOGO.png')
