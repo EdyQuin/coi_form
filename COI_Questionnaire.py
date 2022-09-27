@@ -3,8 +3,8 @@ from deta import Deta
 st.image('./SLP_LOGO.png')
 # Data to be written to Deta Base
 with st.form("form"):
-    name = st.text_input("Your name")
-    age = st.number_input("Your age")
+    a_name = st.text_input("Your name")
+    b_age = st.number_input("Your age")
     email = st.text_input("Your email")
     phone_number = st.text_input("Your phone number")
     one = st.text_input("Does your spouse agree on how you want to dispose of your home?")
@@ -26,7 +26,7 @@ db = deta.Base("LawTech_COI")
 # write the data from the form to the database.
 # You can store any data you want here. Just modify that dictionary below (the entries between the {}).
 if submitted:
-    db.put({"name": name, "age": age, "email": email, "phone number": phone_number, 
+    db.put({"name": a_name, "age": b_age, "email": email, "phone number": phone_number, 
             "one": one, "two": two, "three": three, "four": four, "five": five,
            "six": six, "seven": seven, "eight": eight, "nine": nine, "ten": ten})
 if submitted:
