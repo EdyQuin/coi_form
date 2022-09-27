@@ -4,9 +4,9 @@ st.image('./SLP_LOGO.png')
 # Data to be written to Deta Base
 with st.form("form"):
     name = st.text_input("Your name")
-    qa = st.number_input("Your age")
-    qb = st.text_input("Your email")
-    qc = st.text_input("Your phone number")
+    age = st.number_input("Your age")
+    email = st.text_input("Your email")
+    telephone = st.text_input("Your phone number")
     qd = st.text_input("Does your spouse agree on how you want to dispose of your home?")
     qe = st.text_input("Does your spouse agree on how you want to dispose of your bank accounts?")
     qf = st.text_input("Does your spouse agree on how you want to dispose of your jewelry?")
@@ -26,7 +26,7 @@ db = deta.Base("LawTech_COI")
 # write the data from the form to the database.
 # You can store any data you want here. Just modify that dictionary below (the entries between the {}).
 if submitted:
-    db.put({"qa": qa, "qb": qb, "qc": qc, "qd": qd, 
+    db.put({"name": name, "age": age, "email": email, "telephone": telephone, 
             "qe": qe, "qf": qf, "qg": qg, "qh": qh, "qi": qi,
            "qj": qj, "qk": qk, "ql": ql, "qm": qm, "qn": qn})
     if submitted:
