@@ -3,20 +3,20 @@ from deta import Deta
 st.image('./SLP_LOGO.png')
 # Data to be written to Deta Base
 with st.form("form"):
-    a_name = st.text_input("Your name")
-    b_age = st.number_input("Your age")
-    c_email = st.text_input("Your email")
-    d_phone_number = st.text_input("Your phone number")
-    e_one = st.text_input("Does your spouse agree on how you want to dispose of your home?")
-    f_two = st.text_input("Does your spouse agree on how you want to dispose of your bank accounts?")
-    g_three = st.text_input("Does your spouse agree on how you want to dispose of your jewelry?")
-    h_four = st.text_input("Does your spouse agree on how you want to dispose of your personal property?")
-    i_five = st.text_input("Does your spouse agree on how you want to dispose of your property?")
-    j_six = st.text_input("Do you agree with how your spouse wants to dispose of his/her home?")
-    k_seven = st.text_input("Do you agree with how your spouse wants to dispose of his/her bank accounts")
-    l_eight = st.text_input("Do you agree with how your spouse wants to dispose of his/her jewelry")
-    m_nine = st.text_input("Do you agree with how your spouse wants to dispose of his/her personal property")
-    n_ten = st.text_input("Do you agree with how your spouse wants to dispose of his/her property")
+    aname = st.text_input("Your name")
+    bage = st.number_input("Your age")
+    cemail = st.text_input("Your email")
+    dphone_number = st.text_input("Your phone number")
+    eone = st.text_input("Does your spouse agree on how you want to dispose of your home?")
+    ftwo = st.text_input("Does your spouse agree on how you want to dispose of your bank accounts?")
+    gthree = st.text_input("Does your spouse agree on how you want to dispose of your jewelry?")
+    hfour = st.text_input("Does your spouse agree on how you want to dispose of your personal property?")
+    ifive = st.text_input("Does your spouse agree on how you want to dispose of your property?")
+    jsix = st.text_input("Do you agree with how your spouse wants to dispose of his/her home?")
+    kseven = st.text_input("Do you agree with how your spouse wants to dispose of his/her bank accounts")
+    leight = st.text_input("Do you agree with how your spouse wants to dispose of his/her jewelry")
+    mnine = st.text_input("Do you agree with how your spouse wants to dispose of his/her personal property")
+    nten = st.text_input("Do you agree with how your spouse wants to dispose of his/her property")
     submitted = st.form_submit_button("Save in database")
     clear_on_submit=True
 # Connect to Deta Base with your Project Key
@@ -26,9 +26,9 @@ db = deta.Base("LawTech_COI")
 # write the data from the form to the database.
 # You can store any data you want here. Just modify that dictionary below (the entries between the {}).
 if submitted:
-    db.put({"name": a_name, "age": b_age, "email": c_email, "phone number": d_phone_number, 
-            "one": e_one, "two": f_two, "three": g_three, "four": h_four, "five": i_five,
-           "six": j_six, "seven": k_seven, "eight": l_eight, "nine": m_nine, "ten": n_ten})
+    db.put({"name": name, "age": age, "email": email, "phone number": phone_number, 
+            "one": eone, "two": ftwo, "three": gthree, "four": hfour, "five": ifive,
+           "six": jsix, "seven": kseven, "eight": leight, "nine": mnine, "ten": nten})
     if submitted:
         st.write("Your answers have been successfully received. For any questions or concerns please contact the office @ asanchez@sanchezlp.com. Please close your browser when you are finished.")
 "---"
