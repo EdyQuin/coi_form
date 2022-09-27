@@ -7,11 +7,11 @@ with st.form("form"):
     age = st.number_input("Your age")
     email = st.text_input("Your email")
     phone_number = st.text_input("Your phone number")
-    one = st.text_input("Does you spouse agree on how you want to dispose of your home?")
-    two = st.text_input("Does you spouse agree on how you want to dispose your bank accounts?")
-    three = st.text_input("Does you spouse agree on how you want to dispose your jewelry?")
-    four = st.text_input("Does you spouse agree on how you want to dispose your personal property?")
-    five = st.text_input("Does you spouse agree on how you want to dispose your property?")
+    one = st.text_input("Does your spouse agree on how you want to dispose of your home?")
+    two = st.text_input("Does your spouse agree on how you want to dispose of your bank accounts?")
+    three = st.text_input("Does your spouse agree on how you want to dispose of your jewelry?")
+    four = st.text_input("Does your spouse agree on how you want to dispose of your personal property?")
+    five = st.text_input("Does your spouse agree on how you want to dispose of your property?")
     six = st.text_input("Do you agree with how your spouse wants to dispose of his/her home?")
     seven = st.text_input("Do you agree with how your spouse wants to dispose of his/her bank accounts")
     eight = st.text_input("Do you agree with how your spouse wants to dispose of his/her jewelry")
@@ -32,11 +32,9 @@ if submitted:
             "one": one, "two": two, "three": three, "four": four, "five": five,
            "six": six, "seven": seven, "eight": eight, "nine": nine, "ten": ten})
     if submitted:
-        st.write("Your electronic will record has been successfully saved in the database. For any questions or concerns please contact the me @ asanchez@sanchezlp.com")
-    
+        st.write("Your answers have been successfully received. For any questions or concerns please contact the us @ asanchez@sanchezlp.com")
 "---"
 # This reads all items from the database and displays them to your app.
 # db_content is a list of dictionaries. You can do everything you want with it.
 db_content = db.fetch(query=None, limit=None, last=None).items
-"---"
 st.image('./SLP_LOGO.png')
