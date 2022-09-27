@@ -1,6 +1,5 @@
 import streamlit as st
 from deta import Deta
-
 # Data to be written to Deta Base
 with st.form("form"):
     name = st.text_input("Your name")
@@ -19,11 +18,9 @@ with st.form("form"):
     ten = st.text_input("Do you agree with how your spouse wants to dispose of his/her property")
     submitted = st.form_submit_button("Save in database")
     clear_on_submit=True
-    
 # Connect to Deta Base with your Project Key
 deta = Deta(st.secrets["deta_key"])
 db = deta.Base("LawTech_COI")
-
 # If the user clicked the submit button,
 # write the data from the form to the database.
 # You can store any data you want here. Just modify that dictionary below (the entries between the {}).
