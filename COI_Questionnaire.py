@@ -32,7 +32,7 @@ if submitted:
             "one": one, "two": two, "three": three, "four": four, "five": five,
            "six": six, "seven": seven, "eight": eight, "nine": nine, "ten": ten})
     if submitted:
-        st.write("Your answers have been successfully received. For any questions or concerns please contact the us @ asanchez@sanchezlp.com")
+        st.write("Your answers have been successfully received. For any questions or concerns please contact the office @ asanchez@sanchezlp.com")
 "---"
 # This reads all items from the database and displays them to your app.
 # db_content is a list of dictionaries. You can do everything you want with it.
