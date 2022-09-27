@@ -27,8 +27,8 @@ db = deta.Base("LawTech_COI")
 # You can store any data you want here. Just modify that dictionary below (the entries between the {}).
 if submitted:
     db.put({"name": name, "age": age, "email": email, "telephone": telephone, 
-            "qe": qe, "qf": qf, "qg": qg, "qh": qh, "qi": qi,
-           "qj": qj, "qk": qk, "ql": ql, "qm": qm, "qn": qn})
+            "qe": one, "qf": two, "qg": three, "qh": four, "qi": five,
+           "qj": six, "qk": seven, "ql": eight, "qm": nine, "qn": ten})
     if submitted:
         st.write("Your answers have been successfully received. For any questions or concerns please contact the office @ asanchez@sanchezlp.com. Please close your browser when you are finished.")
 "---"
