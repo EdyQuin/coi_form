@@ -29,7 +29,7 @@ if submitted:
     db.put({"name": a_name, "age": b_age, "email": c_email, "phone number": d_phone_number, 
             "one": e_one, "two": f_two, "three": g_three, "four": h_four, "five": i_five,
            "six": j_six, "seven": k_seven, "eight": l_eight, "nine": m_nine, "ten": n_ten})
-if submitted:
+    if submitted:
         st.write("Your answers have been successfully received. For any questions or concerns please contact the office @ asanchez@sanchezlp.com. Please close your browser when you are finished.")
 "---"
 # This reads all items from the database and displays them to your app.
