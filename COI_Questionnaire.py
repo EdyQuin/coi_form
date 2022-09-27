@@ -25,7 +25,7 @@ db = deta.Base("LawTech_COI")
 # write the data from the form to the database.
 # You can store any data you want here. Just modify that dictionary below (the entries between the {}).
 if submitted:
-    db.put({"name": name, "age": age, "email": email, "phone number": phone_number, 
+    db.put({"name": aname, "age": bage, "email": email, "phone number": phone_number, 
             "one": one, "two": two, "three": three, "four": four, "five": five,
            "six": six, "seven": seven, "eight": eight, "nine": nine, "ten": ten})
     if submitted:
