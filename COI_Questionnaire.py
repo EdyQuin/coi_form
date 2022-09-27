@@ -1,5 +1,6 @@
 import streamlit as st
 from deta import Deta
+st.image('./SLP_LOGO.png')
 # Data to be written to Deta Base
 with st.form("form"):
     name = st.text_input("Your name")
@@ -34,4 +35,4 @@ if submitted:
 # This reads all items from the database and displays them to your app.
 # db_content is a list of dictionaries. You can do everything you want with it.
 db_content = db.fetch(query=None, limit=None, last=None).items
-st.image('./SLP_LOGO.png')
+
